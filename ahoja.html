@@ -1,0 +1,56 @@
+<HTML>
+<HEAD>
+<TITLE>Funciones</TITLE>
+<SCRIPT LANGUAGE ="JavaScript">
+<!-- se oculta la información de los navegadores antiguos
+
+  function ObtieneMayor(dato1, dato2, dato3) {
+
+    var el_mayor=0;
+
+    if (dato1>dato2){
+               el_mayor=dato1;
+        } 
+    else  {
+               el_mayor=dato2;
+             }
+    if (dato3>el_mayor) {
+                  el_mayor=dato3;
+       }
+    return el_mayor;
+  }
+
+// final del comentario -->
+</SCRIPT>
+</HEAD>
+<BODY>
+<CENTER>
+<SCRIPT LANGUAGE ="JavaScript">
+<!-- se oculta la información de los navegadores antiguos
+
+  var primer_dato = 0, segundo_dato = 0, tercer_dato = 0;
+
+ do {
+       primer_dato = prompt("Dame el primer valor a comparar...","");
+       segundo_dato = prompt("Dame el segundo valor a comparar...","");
+       tercer_dato = prompt("Dame el tercer valor a comparar...","");
+
+       primer_dato = parseInt(primer_dato);
+       segundo_dato = parseInt(segundo_dato);
+       tercer_dato = parseInt(tercer_dato);
+
+      document.write("<H3> El mayor valor de ");
+      document.write(primer_dato+", " + 
+                     segundo_dato+" y " + 
+                     tercer_dato+" es:</H3>");
+      document.write("<H1>" +                      ObtieneMayor(primer_dato,segundo_dato,tercer_dato) 
+                     + "</H1>"); 
+   } while (confirm("¿Deseas continuar?"));
+
+    document.write("<H3>...Hecho</H3>");
+
+// final del comentario -->
+</SCRIPT>
+</CENTER>
+</BODY>
+</HTML>

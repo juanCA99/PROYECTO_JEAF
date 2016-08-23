@@ -1,0 +1,8 @@
+<? php 
+$contenido=”lo que quieras escribir en el archivo”;
+$fp=fopen(“lugar/archivo.txt”,”r+”);
+fwrite($fp,$contenido);
+fclose($fp) ;
+   echo  ”Ya fue creado el arhivo”;
+
+?>
